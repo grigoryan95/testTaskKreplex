@@ -20,28 +20,28 @@ const RegistrationPages = () => {
             email,
             password
         }));
-        dispatch(setValidRegister())
+        dispatch(setValidRegister());
         setFullName('');
         setEmail('');
         setPassword('');
     };
 
     const handleEmailChange = e => {
-        setEmail(e.target.value)
-        const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,2})+$/
-        setValidEmail(emailRegex.test(email))
+        setEmail(e.target.value);
+        const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,2})+$/;
+        setValidEmail(emailRegex.test(email));
     };
 
     const handleFullName = e => {
-        setFullName(e.target.value.trim())
-        const fullNameRegex = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/
-        setValidFullName(fullNameRegex.test(fullName))
+        setFullName(e.target.value);
+        const fullNameRegex = /^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$/;
+        setValidFullName(fullNameRegex.test(fullName));
     };
 
     const handlePassword = e => {
-        setPassword(e.target.value)
-        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
-        setValidPassword(passwordRegex.test(password))
+        setPassword(e.target.value);
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+        setValidPassword(passwordRegex.test(password));
     };
 
     return (

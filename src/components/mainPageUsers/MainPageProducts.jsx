@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import './MainPageUsers.css';
+import './MainPageProducts.css';
 import MyProducts from "./myProducts/MyProducts";
 import AllProducts from "./allProducts/AllProducts";
 
-const MainPageUsers = () => {
+const MainPageProducts = () => {
     const [myProducts, setMyProducts] = useState(false);
     const [allProducts, setAllProducts] = useState(false);
     const changeHandler = (event) => {
@@ -33,4 +33,4 @@ const MainPageUsers = () => {
     );
 };
 
-export default MainPageUsers;
+export default MainPageProducts;

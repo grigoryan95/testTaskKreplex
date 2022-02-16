@@ -8,14 +8,14 @@ const LoginPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const userDataObj = useSelector(data => data.registerAndLogin.userDataObj);
-    const [errorMessage, setErrorMessage] = useState(false)
+    const [errorMessage, setErrorMessage] = useState(false);
 
     const handleSubmit = (event) => {
         event.preventDefault();
         if(userDataObj.email === email && userDataObj.password === password) {
-            dispatch(setValidLogin())
+            dispatch(setValidLogin());
         } else {
-            setErrorMessage(true)
+            setErrorMessage(true);
         }
     };
 
@@ -46,7 +46,7 @@ const LoginPage = () => {
                     className="loginBtn"
                     disabled={!(email && password)}
                 >
-                    Register
+                    Login
                 </button>
             </form>
         </div>

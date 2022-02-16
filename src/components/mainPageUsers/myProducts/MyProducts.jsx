@@ -5,11 +5,11 @@ import UserName from "./userName/UserName";
 import {addProduct} from "../../../redux/actions/addProduct/addProduct";
 
 const MyProducts = () => {
-    const dispatch = useDispatch()
-    const [name, setName] = useState('')
-    const [model, setModel] = useState('')
-    const [color, setColor] = useState('')
-    const [price, setPrice] = useState('')
+    const dispatch = useDispatch();
+    const [name, setName] = useState('');
+    const [model, setModel] = useState('');
+    const [color, setColor] = useState('');
+    const [price, setPrice] = useState('');
     const myProducts = useSelector(data => data.products.myProducts);
     const myProduct = myProducts.map((item) => {
         return (
@@ -19,8 +19,8 @@ const MyProducts = () => {
                 <p><span className='productItem'>Color: </span> {item.color}</p>
                 <p><span className='productItem'>Price: </span> {item.price}$</p>
             </div>
-        )
-    })
+        );
+    });
 
     const handleSubmit = (event) =>  {
         event.preventDefault();
@@ -34,7 +34,7 @@ const MyProducts = () => {
         setPrice('');
         setModel('');
         setName('');
-    }
+    };
 
     return (
         <div className='usersName'>

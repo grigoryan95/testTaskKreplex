@@ -1,7 +1,6 @@
 import React from "react";
 import {ADD_PRODUCT} from "../actionTypes/actionsTypes";
 
-
 const initialState = {
     myProducts: [
         {name: 'Samsung', model: 'Galaxsi 5', price: '200', color: 'Black'},
@@ -29,7 +28,6 @@ export const products = (state = initialState, action) => {
                 myProducts: state.myProducts.concat(action.payload)
             }
         }
-
         default:
             return state
     }

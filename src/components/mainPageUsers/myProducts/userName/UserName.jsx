@@ -1,6 +1,6 @@
 import React from 'react';
 import {useSelector} from "react-redux";
-import './UserName.css'
+import './UserName.css';
 
 const UserName = () => {
     const userFullName = useSelector(data => data.registerAndLogin.userDataObj.fullName);
