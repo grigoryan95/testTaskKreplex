@@ -1,0 +1,17 @@
+.allProducts {
+    padding: 10px;
+    box-sizing: border-box;
+}
+.oneItemProduct {
+    border: 1px solid royalblue;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    width: 30%;
+    background-color: aquamarine;
+}
+.allProducts > h1 {
+    text-align: center;
+    color: dodgerblue;
+}

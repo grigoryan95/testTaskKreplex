@@ -1,0 +1,51 @@
+.usersName {
+    padding: 10px;
+    box-sizing: border-box;
+}
+.addProductButton {
+    border: 1px solid blue;
+    color: blue;
+    background: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.productItem {
+    color: blue;
+    font-size: 15px;
+}
+.usersName > h1 {
+    text-align: center;
+    color: dodgerblue;
+}
+.oneItemUsers {
+    border: 1px solid royalblue;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    width: 30%;
+    background-color: aquamarine;
+}
+.boxMyProducts {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.addProduct {
+    border: 1px solid royalblue;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    background-color: aquamarine;
+}
+.addProduct > form {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.addProduct > form input {
+    margin-left: 5px;
+    width: 40%;
+    padding: 4px;
+}
+

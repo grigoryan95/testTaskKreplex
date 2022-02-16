@@ -1,0 +1,12 @@
+.buttonProducts {
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid aquamarine;
+    width: 20%;
+    color: blue;
+    padding: 11px;
+    background: aquamarine;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: auto;
+}

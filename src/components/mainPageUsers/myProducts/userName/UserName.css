@@ -1,0 +1,10 @@
+.userNameJSX {
+    color: royalblue;
+    font-size: 22px;
+    background: aquamarine;
+    border: 1px solid aquamarine;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 3px;
+    padding: 5px;
+}
